@@ -1,0 +1,278 @@
+/*
+ Theme Name:   Twenty Twelve Child
+ Theme URI:   
+ Description:  Twenty Twelve Child Theme
+ Author:       Jacqueline Quintanilla
+ Author URI:   jqdesign.co
+ Template:     twentytwelve
+ Version:      1.0.0
+ License:      
+ License URI:  
+ Tags:         
+ Text Domain:  twenty-twelve-child
+ */
+
+
+/*general styles*/
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400|Josefin+Slab:400,600);
+
+body.custom-font-enabled {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.1rem;
+	color: #515151;
+	font-weight: 400;
+}
+
+.site-content {
+	margin-bottom: 0;
+}
+
+.site-content article {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+
+a {
+	color: #515151;
+}
+
+a:hover {
+	color: #396958;
+}
+
+/*header styles*/
+
+.site-header {
+	padding: 0;
+	text-align: center;
+}
+h1.site-title {
+	text-align: center;
+	font-family: 'Josefin Slab', 'Rockwell', serif;
+	font-weight: 600;
+	margin-top: 3rem;
+	display: none;
+}
+
+.site-header h1 a:hover, .site-header h2 a:hover {
+	color: #515151;
+}
+
+h2.site-description {
+	display: none;
+}
+
+.site-header hgroup h1 { display: none; }
+img.site-logo { 
+	max-width: 100%; 
+	height:auto; 
+	display: inline-block;
+	margin: .25em auto;
+}
+
+p.demo_store {
+	color: black;
+	background-color: #e1b444;
+}
+
+a:-webkit-any-link {
+	text-decoration: none;
+}
+
+/*nav styles*/
+
+.main-navigation {
+	margin-top: .5em;
+}
+.main-navigation ul.nav-menu, .main-navigation div.nav-menu > ul {
+    border-bottom: 1px solid #e1b444;
+    border-top: none;
+    text-align: center;
+}
+
+.main-navigation li a {
+	line-height: 1;
+	font-family: 'Josefin Slab', 'Rockwell', serif;
+	font-weight: 400;
+	font-size: 1.1rem;
+}
+
+.main-navigation .current-menu-item > a, .main-navigation .current-menu-ancestor > a, .main-navigation .current_page_item > a, .main-navigation .current_page_ancestor > a {
+	font-weight: 600;
+	color: #396958;
+}
+
+/*main content styles*/
+
+h1.entry-title a {
+	color: #396958;
+	font-family: 'Josefin Slab', 'Rockwell', serif; 
+}
+
+h1.entry-title a:hover {
+	color: #e1b444;
+}
+
+.comments-link a:hover, .entry-meta a:hover {
+	color: #e1b444;
+}
+
+/*home page*/
+
+body.home article {
+	/*background-color: #396958;*/
+	padding: 0 2rem;
+	/*background: url(../../uploads/2016/02/cake-923980.jpg) no-repeat center center scroll; 
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;*/
+
+	/*box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);*/
+	 /*color: white;*/
+	 font-size: 1.25rem;
+}
+
+body.home #main .entry-header {
+	margin-bottom: 0;
+	margin-top: 1.5rem;
+}
+
+body.home #main h1 {
+	text-align: right;
+	font-size: 3rem;
+	font-family: 'Josefin Slab', 'Rockwell', serif; 
+	font-weight: 600;
+}
+
+body.home #main blockquote {
+	text-align: right;
+	font-size: 1.75rem;
+	font-style: normal;
+	padding: 0;
+	font-family: 'Josefin Slab', 'Rockwell', serif; 
+}
+
+body.home #main blockquote p {
+	margin: 1rem 0;
+}
+
+body.home .site-content article {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+div#secondary.widget-area {
+	padding: 1rem 2rem 0;
+}
+
+div.first.front-widgets {
+	margin-bottom: 0;
+}
+
+div#secondary.widget-area div {
+	margin: .5rem 0;
+}
+
+.widget-area .widget h3 {
+	font-family: 'Josefin Slab', 'Rockwell', serif;
+	font-size: 1rem;
+	color: #396958;
+	margin-bottom: 0;
+}
+
+.template-front-page .widget-area .widget li {
+	list-style-type: none;
+	font-size: 1.1rem;
+}
+
+.template-front-page .widget-area .widget li a.genericon {
+	font-size: 2rem;
+	padding-right: .5rem;
+}
+
+.woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img {
+	float: left;
+	margin-right: 1rem;
+	width: 4rem;
+}
+
+.template-front-page .widget-area .widget li a:hover {
+	color: #e1b444;
+}
+
+
+
+
+
+/*woo style overrides*/
+.woocommerce div.product .product_title {
+	font-family: 'Josefin Slab', 'Rockwell', serif;
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+	font-size: 100%;
+}
+
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+	background-color: #396958;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+	background-color: #e1b444;
+	/*color: #515151;*/
+}
+
+.woocommerce #respond input#submit.alt.disabled, .woocommerce #respond input#submit.alt.disabled:hover, .woocommerce #respond input#submit.alt:disabled, .woocommerce #respond input#submit.alt:disabled:hover, .woocommerce #respond input#submit.alt:disabled[disabled], .woocommerce #respond input#submit.alt:disabled[disabled]:hover, .woocommerce a.button.alt.disabled, .woocommerce a.button.alt.disabled:hover, .woocommerce a.button.alt:disabled, .woocommerce a.button.alt:disabled:hover, .woocommerce a.button.alt:disabled[disabled], .woocommerce a.button.alt:disabled[disabled]:hover, .woocommerce button.button.alt.disabled, .woocommerce button.button.alt.disabled:hover, .woocommerce button.button.alt:disabled, .woocommerce button.button.alt:disabled:hover, .woocommerce button.button.alt:disabled[disabled], .woocommerce button.button.alt:disabled[disabled]:hover, .woocommerce input.button.alt.disabled, .woocommerce input.button.alt.disabled:hover, .woocommerce input.button.alt:disabled, .woocommerce input.button.alt:disabled:hover, .woocommerce input.button.alt:disabled[disabled], .woocommerce input.button.alt:disabled[disabled]:hover {
+	background-color: #e1b444;
+}
+
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
+	background-color: #396958;
+	color: white;
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+	background-color: #e1b444;
+	color: white;
+}
+
+.woocommerce .woocommerce-message:before {
+	color: #e1b444;
+}
+
+.woocommerce .woocommerce-message {
+	border-top-color: #e1b444;
+}
+
+/*widget area overrides*/
+.widget-area .widget a:visited {
+	color: initial;
+}
+
+.widget-area .widget a:hover {
+	color: #e1b444;
+}
+
+.woocommerce .woocommerce-info {
+	border-top-color: #396958;
+}
+
+.woocommerce .woocommerce-info:before {
+	color: #396958;
+}
+
+/*footer styles*/
+
+footer#colophon {
+	padding-bottom: 2rem;
+	margin-top: 0;
+	padding-top: .25em;
+	text-align: right;
+}
+
+
